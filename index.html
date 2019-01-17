@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="index.css">
+    <title>Coding Challenge</title>
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body>
+    <div class="checkList">
+      <ul id="movieList">
+        <li>Star Wars Episode IV - A New Hope </li>
+        <li>Star Wars Episode V - The Empire Strikes Back </li>
+        <li>Star Wars Episode VI - Return of the Jedi </li>
+        <li>Star Wars Episode I - The Phantom Menace </li>
+        <li>Star Wars Episode II - Attack of the Clones </li>
+        <li>Star Wars Episode III - Revenge of the Sith </li>
+        <li>Star Wars Episode VII - The Force Awakens </li>
+        <li id="specialMovie">Star Wars Episode IX </li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    var targetMovie = document.querySelector('ul');
+
+    targetMovie.addEventListener('click', function(e){
+      if(e.target.id != "movieList" && e.target.id != "specialMovie"){
+        e.target.style.color = "gray";
+      }
+    })
+
+  </script>
+</html>

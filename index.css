@@ -1,0 +1,22 @@
+html, body{
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  display: table;
+}
+
+.checkList{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#movieList{
+  padding: 0 25px;
+}
+
+li{
+  list-style-type: none;
+  text-align: center;
+  border-style: solid;
+  margin-bottom: 10px;
+}
